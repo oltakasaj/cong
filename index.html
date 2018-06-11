@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>index</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=1920" />
+	<link href='https://fonts.googleapis.com/css?family=Englebert&subset=latin' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="index.hyperesources/spin.js"></script>
+	<script type="text/javascript" src="index.hyperesources/jquery-1.11.0.js"></script>
+
+
+  <script type="text/javascript">
+
+  function myCallback(hypeDocument, element, event) {
+    if (isScalePossible()){
+      window.myHypeContainerId = hypeDocument.documentId();
+      $('#' + window.myHypeContainerId).css({
+        '-moz-transform-origin': '0% 0%',
+        '-webkit-transform-origin': '0% 0%',
+        '-ms-transform-origin': '0% 0%',
+        '-o-transform-origin': '0% 0%',					
+        'transform-origin': '0% 0%',
+        margin: 0
+      });
+
+      scaleSite();
+      $(window).resize(scaleSite);
+    }
+    return true;
+  }
+
+  if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+  }
+  window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+
+
+  function scaleSite()
+  {
+  	var hypeContainer = $('#' + window.myHypeContainerId);
+    var containerWidth = hypeContainer.width();
+    var containerHeight = hypeContainer.height();
+    var parentWidth = hypeContainer.parent().width();
+    var parentHeight = hypeContainer.parent().height();
+    var scaleWidth = parentWidth / containerWidth;
+    var scaleHeight = parentHeight / containerHeight;
+    //var scale = Math.min(scaleWidth, scaleHeight);
+    var scale = scaleWidth;
+    var left = (containerWidth * scale < parentWidth) ? ((parentWidth - (containerWidth * scale)) / 7) + 'px' : '0px';
+    var top = (containerHeight * scale < parentHeight) ? ((parentHeight - (containerHeight * scale)) / 2) + 'px' : '0px' ;
+    hypeContainer.css({
+        "-moz-transform"    : "scale("+scale+")",
+        "-webkit-transform" : "scale("+scale+")",
+        "-ms-transform"     : "scale("+scale+")",
+        "-o-transform"      : "scale("+scale+")",
+        "transform"         : "scale("+scale+")",
+        "left" : left,
+        "top" : top
+    });
+  }
+
+  function isScalePossible() 
+  {
+    can = 'MozTransform' in document.body.style;
+    if(!can) can = 'webkitTransform' in document.body.style;
+    if(!can) can = 'msTransform' in document.body.style;
+    if(!can) can = 'OTransform' in document.body.style;
+    if(!can) can = 'transform' in document.body.style;
+    if(!can) can = 'Transform' in document.body.style;
+    return can;
+  }
+
+</script>
+ 	<script type="text/javascript">
+	window.onload = function ()
+	{ 
+	var el = document.getElementById( 'spinnerarea' );
+	el.parentNode.removeChild( el ); 
+	}
+	</script>
+	<script type="text/javascript" charset="utf-8">
+				var opts = {
+				  lines: 13, // The number of lines to draw
+				  length: 7, // The length of each line
+				  width: 4, // The line thickness
+				  radius: 10, // The radius of the inner circle
+				  rotate: 0, // The rotation offset
+				  color: '#000', // #rgb or #rrggbb
+				  speed: 1, // Rounds per second
+				  trail: 60, // Afterglow percentage
+				  shadow: false, // Whether to render a shadow
+				  hwaccel: false, // Whether to use hardware acceleration
+				  className: 'spinner', // The CSS class to assign to the spinner
+				  zIndex: 2e9, // The z-index (defaults to 2000000000)
+				  top: 'auto', // Top position relative to parent in px
+				  left: 'auto' // Left position relative to parent in px
+				  };
+				var target = document.getElementById('spinnerarea');
+				var spinner = new Spinner(opts).spin(target); 
+		</script>
+
+		
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="index_hype_container" style="margin:auto;position:relative;width:1920px;height:2160px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="index.hyperesources/index_hype_generated_script.js?57108"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>“Mangio un panino e bevo una birra”
+</div>
+		<div></div>
+		<div> </div>
+		<div>Collega una
+                proposizione secondaria
+           a una   principale</div>
+		<div>“Mangio un panino perché ho fame”
+</div>
+		<div>E
+</div>
+		<div></div>
+		<div></div>
+		<div>Congiunzione coordinante: 
+</div>
+		<div>LE CONGIUNZIONI
+  COORDINANTI
+</div>
+		<div>RICAPITOLIAMO
+</div>
+		<div>Congiunzione subordinante: 
+</div>
+		<div>Parte invariabile del discorso
+</div>
+		<div>LE CONGIUNZIONI COORDINANTI</div>
+		<div>MA e ALTRE
+</div>
+		<div>O
+</div>
+		<div>Non si declina e non si coniuga</div>
+		<div>Collega due
+           proposizioni indipendenti
+ </div>
+		<div>Lingua Latina</div>
+		<div>LE CONGIUNZIONI
+   COORDINANTI
+</div>
+		<div>“Mangio un panino perché ho fame”
+</div>
+		<div></div>
+		<div>1. due o più elementi in una frase
+</div>
+		<div>“Mangio un panino e bevo una birra.”
+</div>
+		<div>“Compro un panino e una birra.”
+</div>
+		<div>“Mangio un panino e bevo una birra”
+</div>
+		<div>Collega</div>
+		<div>2. due o più proposizioni in una frase
+</div>
+		<div> O
+</div>
+		<div>“enclitica”: “morfema che si attacca alla fine di una parola”
+</div>
+		<div>et, atque, ac, -que 
+</div>
+		<div></div>
+		<div>    I: “Vedo le figlie della regina e del contadino.”
+L: “Reginae et/atque/ac agricolae filias video.” 
+</div>
+		<div>Ricorda</div>
+		<div>e
+</div>
+		<div>    I: “Vedo le figlie della regina e del contadino.” 
+    L: “Reginae agricolaeque filias video.”
+L: “Senatus populusque romanus. → SPQR”
+            I: “Il Senato e il popolo romano.”
+</div>
+		<div></div>
+		<div>ITALIANO
+</div>
+		<div>Ac: solo davanti a parole che iniziano con consonante, tranne c, g, q  
+</div>
+		<div></div>
+		<div>A CONGIUNZIONE COORDINANTE “E”
+</div>
+		<div>Atque: solo davanti a parole che iniziano            con vocale , oppure con c, g, q 
+</div>
+		<div>Cosa Cambia
+</div>
+		<div>Esempio
+</div>
+		<div></div>
+		<div>Et: si può usare in tutti i casi  
+</div>
+		<div>LATINO
+</div>
+		<div>-que: particella enclitica
+</div>
+		<div>     I: “Vedo le figlie del contadino e della regina.”
+L: “Agricolae et/ac /atque reginae filias video.” 
+</div>
+		<div>VEL
+</div>
+		<div>        Scelta a piacere, non si escludono
+                            L: “Agricolae filia pigra vel iners est.”   
+                I: “La figlia del contadino è pigra o svogliata.”
+                         (ma può essere pigra e svogliata)
+</div>
+		<div>A CONGIUNZIONE COORDINANTE “O”
+</div>
+		<div></div>
+		<div>                 Un elemento esclude l’altro 
+
+                        L: “Pecunia aut vera aut falsa est.”
+
+    I: “Il denaro è vero o falso.” (non può essere vero e falso!) 
+</div>
+		<div>AUT
+</div>
+		<div>Le congiunzioni sono parti invariabili del discorso, cioè non si declinano e non si coniugano. 
+</div>
+		<div>Possono essere coordinanti o subordinanti.
+</div>
+		<div>Le congiunzioni coordinanti più comuni in Latino sono: et, ac, atque, -que enclitico (“e”), vel, aut, sed, tamen,
+    autem, etiam, nam, enim, ergo, igitur, e itaque.
+</div>
+		<div></div>
+		<div>RICAPITOLIAMO
+</div>
+		<div></div>
+		<div>Anche in funzione ​correlativa ​(italiano: “né..., né...”)
+</div>
+		<div></div>
+		<div>     L: “Reginae filias video
+       nec/neque me salutant.” 
+  I: “Vedo le figlie della regina
+          e non mi salutano. ” 
+</div>
+		<div></div>
+		<div>La negazione non si fonde
+      con le congiunzioni
+          et, atque , e ac
+
+ et non , ac non , atque non 
+           nec, neque 
+</div>
+		<div>      L: “Nec/neque reginae nec/neque agricolae filias video.”
+  I: “Non vedo le figlie né della
+      regina né del contadino.”
+</div>
+		<div>  La congiunzione et è spesso
+ usata in funzione correlativa
+       (italiano: “sia..., sia...”)
+</div>
+		<div>   L: “Et reginae et agricolae
+                filias video.”
+I: “Vedo le figlia sia della regina
+          sia del contadino.” 
+</div>
+		<div>MA
+</div>
+		<div></div>
+		<div>ALTRE
+</div>
+		<div>                 sed, at oppure tamen (tuttavia) 
+
+         L: “Regina severa est, sed/at agricolae eam amant.” 
+            I: “La regina è severa, ma i contadini la amano.”
+
+         L: “Regina severa est, tamen agricolae eam amant.”
+       I: “La regina è severa, tuttavia i contadini la amano.
+
+    
+</div>
+		<div>          Altre congiunzioni comuni                                          autem: “invece”
+                     etiam: “anche” o “persino”
+                          nam ed enim: “infatti”
+          ergo, igitur, itaque: “dunque”, “perciò” 
+</div>
+		<div>“MA” E ALTRE CONGIUNZIONI COORDINANTI
+</div>
+		<div></div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
